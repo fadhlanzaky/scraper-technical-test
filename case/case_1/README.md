@@ -1,11 +1,9 @@
 # CASE STUDY 1
-python version: `3.19.13`
-
-dependencies: `requirements.txt`
-
-target: [Tokopedia](http://tokopedia.com)
-
-browser: `firefox`
+Environment:
+- python version: `3.19.13`
+- dependencies: `requirements.txt`
+- browser: `firefox`
+- OS: `MacOS`
 
 required data:
 - SKU
@@ -14,6 +12,7 @@ required data:
 - page number
 - GMV (price * total sold)
 
+target: [Tokopedia](http://tokopedia.com)
 
 ## summary
 For this scenario I decided to use Playwright for its headless and faster execution.
