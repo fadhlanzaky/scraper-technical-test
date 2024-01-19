@@ -46,7 +46,8 @@ class TokopediaPage:
 
 
     @search_required
-    @timeout(180) # some process took longer to process hence the timeout decorator
+    # only turn this on if executed on Linux/UNIX
+    # @timeout(180) # some process took longer to process hence the timeout decorator
     def get_products_from_search(self) -> list:
         products = []
 
