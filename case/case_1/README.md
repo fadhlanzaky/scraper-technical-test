@@ -24,7 +24,7 @@ The method used to scrape the data is called `get_products_from_search()`. This 
 
 Tokopedia uses lazy loading to load the contents/products. The products become visible when users scroll the page down. For that reason, the `get_products_from_search()` method simulates the scrolling by creating a keyboard event. It will scroll until the navbar is visible, indicating the end of the container. It waits for 0.5 second after every keyboard press to give the page time to load its contents.
 
-`get_products_from_search()` has two decorators. The `search_required` decorator indicates that the method only works after the `search()` method is executed, and the `timeout` decorator limits the runtime of the method to prevent an unresponsive process.
+`get_products_from_search()` has two decorators. The `search_required` decorator indicates that the method only works after the `search()` method is executed, and the `timeout` decorator limits the runtime of the method to prevent an unresponsive process. However, the `timeout` decorator only works on LINUX or UNIX (tested on MacOS). 
 
 The data of each product is stored in a dictionary which will be collected in a list as the return of this method. This type of structure is convenient for multiple purposes for example inserting to database, or, in this case, transforming to `DataFrame`.
 
