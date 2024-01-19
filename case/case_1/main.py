@@ -17,12 +17,12 @@ def main(search_item:str, number_of_page:int) -> None:
         browser = playwright.firefox.launch(headless=True)
         page = browser.new_page()
 
-        # create new instance of TokopediaPage
-        tokped = TokopediaPage(page)
-        tokped.navigate()
-        tokped.search(search_item)
-
         try:
+            # create new instance of TokopediaPage
+            tokped = TokopediaPage(page)
+            tokped.navigate()
+            tokped.search(search_item)
+            
             products = []
             # scrape data according to the number of page
             for x in range(number_of_page):
