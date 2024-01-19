@@ -1,8 +1,7 @@
 # Smallest Less Five
-
-python version: `3.19.13`
-
-dependecies: `requirements.txt`
+Environment:
+- python version: `3.19.13`
+- dependecies: `requirements.txt`
 
 input: `numbers(str)`
 
