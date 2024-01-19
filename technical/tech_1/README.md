@@ -1,9 +1,9 @@
 
 # Initiator of Discount
-python version: `3.19.13`
-
-dependencies: `requirements.txt`
-
+Environment:
+- python version: `3.19.13`
+- dependencies: `requirements.txt`
+  
 input: `prices(str)`
 
 output: `index(int)`
